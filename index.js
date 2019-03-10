@@ -61,7 +61,7 @@ $(document).ready(function () {
         return isMobile.any(); //是移动设备
     }
     
-    var mobile_flag = isMobile();
+    var mobile_flag = IsMobile();
     
     if(!mobile_flag) {
         $("#where").hide();
