@@ -31,10 +31,12 @@ $(document).ready(function () {
         $("#home").hide(500);
         $("#search").show(100);
         $("#searchbox").show(100);
+        $("#navtop").show(100);
     }
 
     $("#searchbox").hide();
     $("#search").hide();
+    $("#navtop").hide();
     $("#searbut").click(function () {
         var str = $("#searcont").val();
         var whi = $("#which").val();
