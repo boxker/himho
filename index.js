@@ -38,31 +38,29 @@ $(document).ready(function () {
     $("#search").hide();
     $("#navtop").hide();
     
-    function isMobile() {
-    var userAgentInfo = navigator.userAgent;
+    //判断是否是手机
+    function IsMobile() {
+        var isMobile = {
+            Android: function () {
+                return navigator.userAgent.match(/Android/i) ? true : false;
+            },
+            BlackBerry: function () {
+                return navigator.userAgent.match(/BlackBerry/i) ? true : false;
+            },
+            iOS: function () {
+                return navigator.userAgent.match(/iPhone|iPad|iPod/i) ? true : false;
+            },
+            Windows: function () {
+                return navigator.userAgent.match(/IEMobile/i) ? true : false;
+            },
+            any: function () {
+                return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());
+            }
+        };
 
-    var mobileAgents = [ "Android", "iPhone", "SymbianOS", "Windows Phone", "iPad","iPod"];
-
-    var mobile_flag = false;
-
-    //根据userAgent判断是否是手机
-    for (var v = 0; v < mobileAgents.length; v++) {
-        if (userAgentInfo.indexOf(mobileAgents[v]) > 0) {
-            mobile_flag = true;
-            break;
-        }
+        return isMobile.any(); //是移动设备
     }
-
-     var screen_width = window.screen.width;
-     var screen_height = window.screen.height;    
-
-     //根据屏幕分辨率判断是否是手机
-     if(screen_width < 500 && screen_height < 800){
-         mobile_flag = true;
-     }
-
-     return mobile_flag;
-    }
+    
     var mobile_flag = isMobile();
     
     if(!mobile_flag) {
