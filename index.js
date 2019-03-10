@@ -63,7 +63,7 @@ $(document).ready(function () {
     
     var mobile_flag = IsMobile();
     
-    if(!mobile_flag) {
+    if(mobile_flag) {
         $("#where").hide();
     }
     
