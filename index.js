@@ -37,6 +37,12 @@ $(document).ready(function () {
     $("#searchbox").hide();
     $("#search").hide();
     $("#navtop").hide();
+    var mobile_flag = isMobile();
+    
+    if(!mobile_flag) {
+        $("#where").hide();
+    }
+    
     $("#searbut").click(function () {
         var str = $("#searcont").val();
         var whi = $("#which").val();
