@@ -1,270 +1,341 @@
 <!DOCTYPE html>
 <html>
 
-	<head>
-		<title>冒号 --> MHO.CX</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!-- 引入 Bootstrap -->
-		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<head>
+    <title>冒号 --> MHO.CX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入 Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
-		<!-- HTML5 Shiv 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
-		<!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
-		<!--[if lt IE 9]>
+    <!-- HTML5 Shiv 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
+    <!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
+    <!--[if lt IE 9]>
          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
          <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
       <![endif]-->
-		<!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
-		<script src="https://code.jquery.com/jquery.js"></script>
-		<!-- 包括所有已编译的插件 -->
-		<script src="https://mho.cx/index.js"></script>
-		<style>
-			.table>tbody>tr>td{border:0px;}
-			html,body { height: 94%; padding: 0; margin: 0; }
-			.A { padding: 0; margin: 0;}
-			.B { height: 100%; padding: 0; margin: 0; }
-		</style>
-		<link rel="shortcut icon" href="fa.ico" />
-	</head>
+    <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- 包括所有已编译的插件 -->
+    <script src="https://mho.cx/index.js"></script>
+    <style>
+        .table>tbody>tr>td {
+            border: 0px;
+        }
 
-	<body>
-		<nav id="navtop" class="A navbar navbar-default">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<a class="navbar-brand" href="https://www.mho.cx">
-						<p>MHO.CX</p>
-					</a>
-					<form class="navbar-form navbar-left" role="form">
-						<div class="form-group">
-							<select id="which" class="form-control">
-								<option value="1">百度</option>
-								<option value="2">必应</option>
-								<option value="3">搜狗</option>
-								<option value="4">360</option>
-								<option value="5">谷歌</option>
-							</select>
-						</div>
-					</form>
-					<div id="searchbox" class="navbar-form input-group container">
-						<input id="searchboxcont" type="text" class="form-control" placeholder="发现一个新世界!" />
-						<span class="input-group-btn navbar-left">
-							<button id="searboxbut" class="btn btn-info btn-search">GO !</button>
-						</span>
-					</div>
-				</div>
-			</div>
-		</nav>
-		<div class="B" id="search" style="height: 100%;"></div>
-		<br />
-		<div id="home" class="container">
-			<div class="col-md-2">&nbsp;</div>
-			<div class="col-md-8">
-				<div class="well text-center">
-					<h1>冒号 --> MHO.CX</h1>
-				</div>
-				<div class="input-group" style="margin-top:0px positon:relative">
-					<input id="searcont" type="text" class="form-control" placeholder="发现一个新世界!" />
-					<span class="input-group-btn">
-						<button id="searbut" class="btn btn-info btn-search" style="margin-left:3px">GO !</button>
-					</span>
-				</div>
-				<br />
-				<div id="where" class="well text-center">
-					<div>
-						<table class="table">
-							<tbody>
-								<tr>
-									<td>
-										<div class="btn-group btn-group-justified" role="group" aria-label="">
-											<div class="btn-group" role="group">
-												<button onclick="javascript:window.location.href='https://baidu.com';" type="button" class="btn btn-default">百度</button>
-											</div>
-											<div class="btn-group" role="group">
-												<button onclick="javascript:window.location.href='https://qq.com';" type="button" class="btn btn-default">腾讯</button>
-											</div>
-											<div class="btn-group" role="group">
-												<button onclick="javascript:window.location.href='https://weibo.com';" type="button" class="btn btn-default">微博</button>
-											</div>
-											<div class="btn-group" role="group">
-												<button onclick="javascript:window.location.href='https://taobao.com';" type="button" class="btn btn-default">淘宝</button>
-											</div>
-											<div class="btn-group" role="group">
-												<button onclick="javascript:window.location.href='https://jd.com';" type="button" class="btn btn-default">京东</button>
-											</div>
-											<div class="btn-group" role="group">
-												<button onclick="javascript:window.location.href='https://tieba.com';" type="button" class="btn btn-default">贴吧</button>
-											</div>
-											<div class="btn-group" role="group">
-												<button onclick="javascript:window.location.href='https://pan.baidu.com';" type="button" class="btn btn-default">百度网盘</button>
-											</div>
-											<div class="btn-group" role="group">
-												<button onclick="javascript:window.location.href='https://toutiao.com';" type="button" class="btn btn-default">今日头条</button>
-											</div>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div class="btn-group btn-group-justified" role="group" aria-label="">
-											<div class="btn-group" role="group">
-												<button onclick="javascript:window.location.href='https://iqiyi.com';" type="button" class="btn btn-default">爱奇艺</button>
-											</div>
-											<div class="btn-group" role="group">
-												<button onclick="javascript:window.location.href='https://youku.com';" type="button" class="btn btn-default">优酷</button>
-											</div>
-											<div class="btn-group" role="group">
-												<button onclick="javascript:window.location.href='https://mgtv.com';" type="button" class="btn btn-default">芒果TV</button>
-											</div>
-											<div class="btn-group" role="group">
-												<button onclick="javascript:window.location.href='https://v.qq.com';" type="button" class="btn btn-default">腾讯视频</button>
-											</div>
-											<div class="btn-group" role="group">
-												<button onclick="javascript:window.location.href='https://v.sohu.com';" type="button" class="btn btn-default">搜狐视频</button>
-											</div>
-											<div class="btn-group" role="group">
-												<button onclick="javascript:window.location.href='https://bilibili.com';" type="button" class="btn btn-default">哔哩哔哩</button>
-											</div>
-											<div class="btn-group" role="group">
-												<button onclick="javascript:window.location.href='https://music.163.com';" type="button" class="btn btn-default">云音乐</button>
-											</div>
-											<div class="btn-group" role="group">
-												<button onclick="javascript:window.location.href='https://xiami.com';" type="button" class="btn btn-default">虾米音乐</button>
-											</div>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div class="btn-group btn-group-justified" role="group" aria-label="">
-											<div class="btn-group" role="group">
-												<button onclick="javascript:window.location.href='https://ifeng.com';" type="button" class="btn btn-default">凤凰网</button>
-											</div>
-											<div class="btn-group" role="group">
-												<button onclick="javascript:window.location.href='http://www.qdaily.com/';" type="button" class="btn btn-default">好奇心日报</button>
-											</div>
-											<div class="btn-group" role="group">
-												<button onclick="javascript:window.location.href='http://www.cankaoxiaoxi.com/';" type="button" class="btn btn-default">参考消息</button>
-											</div>
-											<div class="btn-group" role="group">
-												<button onclick="javascript:window.location.href='http://www.huanqiu.com/';" type="button" class="btn btn-default">环球网</button>
-											</div>
-											<div class="btn-group" role="group">
-												<button onclick="javascript:window.location.href='http://www.thepaper.cn/';" type="button" class="btn btn-default">澎湃新闻</button>
-											</div>
-											<div class="btn-group" role="group">
-												<button onclick="javascript:window.location.href='http://36kr.com/';" type="button" class="btn btn-default">36氪</button>
-											</div>
-											<div class="btn-group" role="group">
-												<button onclick="javascript:window.location.href='http://www.zol.com.cn/';" type="button" class="btn btn-default">中关村</button>
-											</div>
-											<div class="btn-group" role="group">
-												<button onclick="javascript:window.location.href='http://news.baidu.com/';" type="button" class="btn btn-default">百度新闻</button>
-											</div>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div class="btn-group btn-group-justified" role="group" aria-label="">
-											<div class="btn-group" role="group">
-												<button onclick="javascript:window.location.href='https://zhihu.com';" type="button" class="btn btn-default">知乎</button>
-											</div>
-											<div class="btn-group" role="group">
-												<button onclick="javascript:window.location.href='http://www.mydrivers.com/';" type="button" class="btn btn-default">快科技</button>
-											</div>
-											<div class="btn-group" role="group">
-												<button onclick="javascript:window.location.href='https://www.hupu.com/';" type="button" class="btn btn-default">虎扑</button>
-											</div>
-											<div class="btn-group" role="group">
-												<button onclick="javascript:window.location.href='https://gfan.com';" type="button" class="btn btn-default">机锋</button>
-											</div>
-											<div class="btn-group" role="group">
-												<button onclick="javascript:window.location.href='https://douban.com';" type="button" class="btn btn-default">豆瓣</button>
-											</div>
-											<div class="btn-group" role="group">
-												<button onclick="javascript:window.location.href='http://www.guokr.com/';" type="button" class="btn btn-default">果壳网</button>
-											</div>
-											<div class="btn-group" role="group">
-												<button onclick="javascript:window.location.href='http://bbs.tianya.cn/';" type="button" class="btn btn-default">天涯</button>
-											</div>
-											<div class="btn-group" role="group">
-												<button onclick="javascript:window.location.href='http://qzone.qq.com/';" type="button" class="btn btn-default">QQ空间</button>
-											</div>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div class="btn-group btn-group-justified" role="group" aria-label="">
-											<div class="btn-group" role="group">
-												<button onclick="javascript:window.location.href='https://www.suning.com';" type="button" class="btn btn-default">苏宁易购</button>
-											</div>
-											<div class="btn-group" role="group">
-												<button onclick="javascript:window.location.href='https://mi.com';" type="button" class="btn btn-default">小米商城</button>
-											</div>
-											<div class="btn-group" role="group">
-												<button onclick="javascript:window.location.href='http://you.163.com/';" type="button" class="btn btn-default">网易严选</button>
-											</div>
-											<div class="btn-group" role="group">
-												<button onclick="javascript:window.location.href='http://www.dianping.com/';" type="button" class="btn btn-default">大众点评</button>
-											</div>
-											<div class="btn-group" role="group">
-												<button onclick="javascript:window.location.href='https://z.cn';" type="button" class="btn btn-default">亚马逊</button>
-											</div>
-											<div class="btn-group" role="group">
-												<button onclick="javascript:window.location.href='https://2.taobao.com/';" type="button" class="btn btn-default">闲鱼</button>
-											</div>
-											<div class="btn-group" role="group">
-												<button onclick="javascript:window.location.href='http://www.mafengwo.cn/';" type="button" class="btn btn-default">蚂蜂窝</button>
-											</div>
-											<div class="btn-group" role="group">
-												<button onclick="javascript:window.location.href='https://www.ctrip.com/';" type="button" class="btn btn-default">携程</button>
-											</div>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div class="btn-group btn-group-justified" role="group" aria-label="">
-											<div class="btn-group" role="group">
-												<button onclick="javascript:window.location.href='https://www.douyu.com/';" type="button" class="btn btn-default">斗鱼</button>
-											</div>
-											<div class="btn-group" role="group">
-												<button onclick="javascript:window.location.href='http://www.huya.com/';" type="button" class="btn btn-default">虎牙</button>
-											</div>
-											<div class="btn-group" role="group">
-												<button onclick="javascript:window.location.href='https://.com';" type="button" class="btn btn-default">网易CC</button>
-											</div>
-											<div class="btn-group" role="group">
-												<button onclick="javascript:window.location.href='https://yy.com';" type="button" class="btn btn-default">YY直播</button>
-											</div>
-											<div class="btn-group" role="group">
-												<button onclick="javascript:window.location.href='https://4399.com';" type="button" class="btn btn-default">4399</button>
-											</div>
-											<div class="btn-group" role="group">
-												<button onclick="javascript:window.location.href='http://www.gamersky.com/';" type="button" class="btn btn-default">游民星空</button>
-											</div>
-											<div class="btn-group" role="group">
-												<button onclick="javascript:window.location.href='https://store.steampowered.com/';" type="button" class="btn btn-default">Steam</button>
-											</div>
-											<div class="btn-group" role="group">
-												<button onclick="javascript:window.location.href='https://37.com';" type="button" class="btn btn-default">37游戏</button>
-											</div>
-										</div>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-				<div class="well text-center">
-					<p>冒号出品</p>
-					<p>Copyright &copy; 2019 <a href="https://www.mho.cx">MHO.CX</a></p>
-				</div>
-			</div>
-			<div class="col-md-2">&nbsp;</div>
-			<br />
-		</div>
+        html,
+        body {
+            height: 94%;
+            padding: 0;
+            margin: 0;
+        }
 
-	</body>
+        .A {
+            padding: 0;
+            margin: 0;
+        }
+
+        .B {
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <link rel="shortcut icon" href="fa.ico" />
+</head>
+
+<body>
+    <nav id="navtop" class="A navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="https://www.mho.cx">
+                    <p>MHO.CX</p>
+                </a>
+                <form class="navbar-form navbar-left" role="form">
+                    <div class="form-group">
+                        <select id="which" class="form-control">
+                            <option value="1">百度</option>
+                            <option value="2">必应</option>
+                            <option value="3">搜狗</option>
+                            <option value="4">360</option>
+                            <option value="5">谷歌</option>
+                        </select>
+                    </div>
+                </form>
+                <div id="searchbox" class="navbar-form input-group container">
+                    <input id="searchboxcont" type="text" class="form-control" placeholder="发现一个新世界!" />
+                    <span class="input-group-btn navbar-left">
+                        <button id="searboxbut" class="btn btn-info btn-search">GO !</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="B" id="search" style="height: 100%;"></div>
+    <br />
+    <div id="home" class="container">
+        <div class="col-md-2">&nbsp;</div>
+        <div class="col-md-8">
+            <div class="well text-center">
+                <h1>冒号 --> MHO.CX</h1>
+            </div>
+            <div class="input-group" style="margin-top:0px positon:relative">
+                <input id="searcont" type="text" class="form-control" placeholder="发现一个新世界!" />
+                <span class="input-group-btn">
+                    <button id="searbut" class="btn btn-info btn-search" style="margin-left:3px">GO !</button>
+                </span>
+            </div>
+            <br />
+            <div id="where" class="well text-center">
+                <div>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="btn-group btn-group-justified" role="group" aria-label="">
+                                        <div class="btn-group" role="group">
+                                            <button onclick="javascript:window.location.href='https://baidu.com';"
+                                                type="button" class="btn btn-default">百度</button>
+                                        </div>
+                                        <div class="btn-group" role="group">
+                                            <button onclick="javascript:window.location.href='https://qq.com';"
+                                                type="button" class="btn btn-default">腾讯</button>
+                                        </div>
+                                        <div class="btn-group" role="group">
+                                            <button onclick="javascript:window.location.href='https://weibo.com';"
+                                                type="button" class="btn btn-default">微博</button>
+                                        </div>
+                                        <div class="btn-group" role="group">
+                                            <button onclick="javascript:window.location.href='https://taobao.com';"
+                                                type="button" class="btn btn-default">淘宝</button>
+                                        </div>
+                                        <div class="btn-group" role="group">
+                                            <button onclick="javascript:window.location.href='https://jd.com';"
+                                                type="button" class="btn btn-default">京东</button>
+                                        </div>
+                                        <div class="btn-group" role="group">
+                                            <button onclick="javascript:window.location.href='https://tieba.com';"
+                                                type="button" class="btn btn-default">贴吧</button>
+                                        </div>
+                                        <div class="btn-group" role="group">
+                                            <button onclick="javascript:window.location.href='https://pan.baidu.com';"
+                                                type="button" class="btn btn-default">百度网盘</button>
+                                        </div>
+                                        <div class="btn-group" role="group">
+                                            <button onclick="javascript:window.location.href='https://toutiao.com';"
+                                                type="button" class="btn btn-default">今日头条</button>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="btn-group btn-group-justified" role="group" aria-label="">
+                                        <div class="btn-group" role="group">
+                                            <button onclick="javascript:window.location.href='https://iqiyi.com';"
+                                                type="button" class="btn btn-default">爱奇艺</button>
+                                        </div>
+                                        <div class="btn-group" role="group">
+                                            <button onclick="javascript:window.location.href='https://youku.com';"
+                                                type="button" class="btn btn-default">优酷</button>
+                                        </div>
+                                        <div class="btn-group" role="group">
+                                            <button onclick="javascript:window.location.href='https://mgtv.com';"
+                                                type="button" class="btn btn-default">芒果TV</button>
+                                        </div>
+                                        <div class="btn-group" role="group">
+                                            <button onclick="javascript:window.location.href='https://v.qq.com';"
+                                                type="button" class="btn btn-default">腾讯视频</button>
+                                        </div>
+                                        <div class="btn-group" role="group">
+                                            <button onclick="javascript:window.location.href='https://v.sohu.com';"
+                                                type="button" class="btn btn-default">搜狐视频</button>
+                                        </div>
+                                        <div class="btn-group" role="group">
+                                            <button onclick="javascript:window.location.href='https://bilibili.com';"
+                                                type="button" class="btn btn-default">哔哩哔哩</button>
+                                        </div>
+                                        <div class="btn-group" role="group">
+                                            <button onclick="javascript:window.location.href='https://music.163.com';"
+                                                type="button" class="btn btn-default">云音乐</button>
+                                        </div>
+                                        <div class="btn-group" role="group">
+                                            <button onclick="javascript:window.location.href='https://xiami.com';"
+                                                type="button" class="btn btn-default">虾米音乐</button>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="btn-group btn-group-justified" role="group" aria-label="">
+                                        <div class="btn-group" role="group">
+                                            <button onclick="javascript:window.location.href='https://www.ifeng.com';"
+                                                type="button" class="btn btn-default">凤凰网</button>
+                                        </div>
+                                        <div class="btn-group" role="group">
+                                            <button onclick="javascript:window.location.href='http://www.qdaily.com/';"
+                                                type="button" class="btn btn-default">好奇心</button>
+                                        </div>
+                                        <div class="btn-group" role="group">
+                                            <button
+                                                onclick="javascript:window.location.href='http://www.cankaoxiaoxi.com/';"
+                                                type="button" class="btn btn-default">参考消息</button>
+                                        </div>
+                                        <div class="btn-group" role="group">
+                                            <button onclick="javascript:window.location.href='http://www.huanqiu.com/';"
+                                                type="button" class="btn btn-default">环球网</button>
+                                        </div>
+                                        <div class="btn-group" role="group">
+                                            <button onclick="javascript:window.location.href='http://www.thepaper.cn/';"
+                                                type="button" class="btn btn-default">澎湃新闻</button>
+                                        </div>
+                                        <div class="btn-group" role="group">
+                                            <button onclick="javascript:window.location.href='http://36kr.com/';"
+                                                type="button" class="btn btn-default">36氪</button>
+                                        </div>
+                                        <div class="btn-group" role="group">
+                                            <button onclick="javascript:window.location.href='http://www.zol.com.cn/';"
+                                                type="button" class="btn btn-default">中关村</button>
+                                        </div>
+                                        <div class="btn-group" role="group">
+                                            <button onclick="javascript:window.location.href='http://news.baidu.com/';"
+                                                type="button" class="btn btn-default">百度新闻</button>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="btn-group btn-group-justified" role="group" aria-label="">
+                                        <div class="btn-group" role="group">
+                                            <button onclick="javascript:window.location.href='https://zhihu.com';"
+                                                type="button" class="btn btn-default">知乎</button>
+                                        </div>
+                                        <div class="btn-group" role="group">
+                                            <button
+                                                onclick="javascript:window.location.href='http://www.mydrivers.com/';"
+                                                type="button" class="btn btn-default">快科技</button>
+                                        </div>
+                                        <div class="btn-group" role="group">
+                                            <button onclick="javascript:window.location.href='https://www.hupu.com/';"
+                                                type="button" class="btn btn-default">虎扑</button>
+                                        </div>
+                                        <div class="btn-group" role="group">
+                                            <button onclick="javascript:window.location.href='https://gfan.com';"
+                                                type="button" class="btn btn-default">机锋</button>
+                                        </div>
+                                        <div class="btn-group" role="group">
+                                            <button onclick="javascript:window.location.href='https://douban.com';"
+                                                type="button" class="btn btn-default">豆瓣</button>
+                                        </div>
+                                        <div class="btn-group" role="group">
+                                            <button onclick="javascript:window.location.href='http://www.guokr.com/';"
+                                                type="button" class="btn btn-default">果壳网</button>
+                                        </div>
+                                        <div class="btn-group" role="group">
+                                            <button onclick="javascript:window.location.href='http://bbs.tianya.cn/';"
+                                                type="button" class="btn btn-default">天涯</button>
+                                        </div>
+                                        <div class="btn-group" role="group">
+                                            <button onclick="javascript:window.location.href='http://qzone.qq.com/';"
+                                                type="button" class="btn btn-default">QQ空间</button>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="btn-group btn-group-justified" role="group" aria-label="">
+                                        <div class="btn-group" role="group">
+                                            <button onclick="javascript:window.location.href='https://www.suning.com';"
+                                                type="button" class="btn btn-default">苏宁易购</button>
+                                        </div>
+                                        <div class="btn-group" role="group">
+                                            <button onclick="javascript:window.location.href='https://mi.com';"
+                                                type="button" class="btn btn-default">小米商城</button>
+                                        </div>
+                                        <div class="btn-group" role="group">
+                                            <button onclick="javascript:window.location.href='http://you.163.com/';"
+                                                type="button" class="btn btn-default">网易严选</button>
+                                        </div>
+                                        <div class="btn-group" role="group">
+                                            <button
+                                                onclick="javascript:window.location.href='http://www.dianping.com/';"
+                                                type="button" class="btn btn-default">大众点评</button>
+                                        </div>
+                                        <div class="btn-group" role="group">
+                                            <button onclick="javascript:window.location.href='https://z.cn';"
+                                                type="button" class="btn btn-default">亚马逊</button>
+                                        </div>
+                                        <div class="btn-group" role="group">
+                                            <button onclick="javascript:window.location.href='https://2.taobao.com/';"
+                                                type="button" class="btn btn-default">闲鱼</button>
+                                        </div>
+                                        <div class="btn-group" role="group">
+                                            <button onclick="javascript:window.location.href='http://www.mafengwo.cn/';"
+                                                type="button" class="btn btn-default">蚂蜂窝</button>
+                                        </div>
+                                        <div class="btn-group" role="group">
+                                            <button onclick="javascript:window.location.href='https://www.ctrip.com/';"
+                                                type="button" class="btn btn-default">携程</button>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="btn-group btn-group-justified" role="group" aria-label="">
+                                        <div class="btn-group" role="group">
+                                            <button onclick="javascript:window.location.href='https://www.douyu.com/';"
+                                                type="button" class="btn btn-default">斗鱼</button>
+                                        </div>
+                                        <div class="btn-group" role="group">
+                                            <button onclick="javascript:window.location.href='http://www.huya.com/';"
+                                                type="button" class="btn btn-default">虎牙</button>
+                                        </div>
+                                        <div class="btn-group" role="group">
+                                            <button onclick="javascript:window.location.href='https://.com';"
+                                                type="button" class="btn btn-default">网易CC</button>
+                                        </div>
+                                        <div class="btn-group" role="group">
+                                            <button onclick="javascript:window.location.href='https://yy.com';"
+                                                type="button" class="btn btn-default">YY直播</button>
+                                        </div>
+                                        <div class="btn-group" role="group">
+                                            <button onclick="javascript:window.location.href='https://4399.com';"
+                                                type="button" class="btn btn-default">4399</button>
+                                        </div>
+                                        <div class="btn-group" role="group">
+                                            <button
+                                                onclick="javascript:window.location.href='http://www.gamersky.com/';"
+                                                type="button" class="btn btn-default">游民星空</button>
+                                        </div>
+                                        <div class="btn-group" role="group">
+                                            <button
+                                                onclick="javascript:window.location.href='https://store.steampowered.com/';"
+                                                type="button" class="btn btn-default">Steam</button>
+                                        </div>
+                                        <div class="btn-group" role="group">
+                                            <button onclick="javascript:window.location.href='https://37.com';"
+                                                type="button" class="btn btn-default">37游戏</button>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="text-center">
+                <p><b>冒号出品</b></p>
+                <p>Copyright &copy; 2019 <a href="https://www.mho.cx">MHO.CX</a></p>
+            </div>
+        </div>
+        <div class="col-md-2">&nbsp;</div>
+        <br />
+    </div>
+
+</body>
+
 
 </html>
