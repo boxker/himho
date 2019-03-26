@@ -50,7 +50,7 @@
                 <a class="navbar-brand" href="https://www.mho.cx">
                     <p>MHO.CX</p>
                 </a>
-                <form class="navbar-form navbar-left" role="form">
+                <form id="navtop-which" class="navbar-form navbar-left" role="form">
                     <div class="form-group">
                         <select id="which" class="form-control">
                             <option value="1">百度</option>
@@ -87,6 +87,16 @@
             <br />
             <div id="where" class="well text-center">
                 <div>
+                    <div>
+                        <div class="radio" id="ra">
+                            <label>
+                                <input type="radio" name="optionsRadios" id="r1" value="short">精简版
+                            </label>
+                            <label>
+                                <input type="radio" name="optionsRadios" id="r2" value="long">完整版
+                            </label>
+                        </div>
+                    </div>
                     <table class="table">
                         <tbody>
                             <tr>
@@ -165,7 +175,7 @@
                                     </div>
                                 </td>
                             </tr>
-                            <tr>
+                            <tr class="more">
                                 <td>
                                     <div class="btn-group btn-group-justified" role="group" aria-label="">
                                         <div class="btn-group" role="group">
@@ -204,7 +214,7 @@
                                     </div>
                                 </td>
                             </tr>
-                            <tr>
+                            <tr class="more">
                                 <td>
                                     <div class="btn-group btn-group-justified" role="group" aria-label="">
                                         <div class="btn-group" role="group">
@@ -243,7 +253,7 @@
                                     </div>
                                 </td>
                             </tr>
-                            <tr>
+                            <tr class="more">
                                 <td>
                                     <div class="btn-group btn-group-justified" role="group" aria-label="">
                                         <div class="btn-group" role="group">
@@ -282,7 +292,7 @@
                                     </div>
                                 </td>
                             </tr>
-                            <tr>
+                            <tr class="more">
                                 <td>
                                     <div class="btn-group btn-group-justified" role="group" aria-label="">
                                         <div class="btn-group" role="group">
@@ -326,16 +336,21 @@
                     </table>
                 </div>
             </div>
-            <div class="text-center">
-                <p><b>冒号出品</b></p>
-                <p>Copyright &copy; 2019 <a href="https://www.mho.cx">MHO.CX</a></p>
+            <div id="news" class="well">
+                <!-- <div class="panel panel-default">
+                    <div class="panel-body">
+                        这是一个基本的面板
+                    </div>
+                </div> -->
             </div>
         </div>
         <div class="col-md-2">&nbsp;</div>
         <br />
     </div>
-
+    <footer class="text-center container footer">
+        <p><b>冒号出品</b></p>
+        <p>Copyright &copy; 2019 <a href="https://www.mho.cx">MHO.CX</a></p>
+    </footer>
 </body>
-
 
 </html>
