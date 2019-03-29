@@ -10,6 +10,7 @@ Colon Web site navigation
 - [ ] 新闻下拉刷新
 - [ ] 添加丰富的信息流
 - [ ] 修改UI
+- [ ] 修复网速慢显示错误
 
 ## V 2.0
 
